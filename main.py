@@ -4,5 +4,5 @@
 import json
 from core import unixcmd
 
-print(json.dumps(unixcmd.free(), indent=4))
-print(json.dumps(unixcmd.df(), indent=4))
+print(json.dumps(unixcmd.free("-lh"), indent=4))
+print(json.dumps(unixcmd.df("-T"), indent=4))
